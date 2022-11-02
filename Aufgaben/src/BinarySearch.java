@@ -11,14 +11,14 @@ public class BinarySearch {
                 // der gesuchte buchstabe ist größer => first wert wird auf den jetzigen mittelpunkt gesetzt
                 first = mid + 1;
 
-            // mid ist der gesuchte Buchstabe
+                // mid ist der gesuchte Buchstabe
             }else if ( arr[mid] == key ){
 
                 //Ausgabe
                 System.out.println("Element is found at index: " + mid);
                 break;
 
-            // abbruchs bedingung if (first > last)  daher abruch der while schleife
+                // abbruchs bedingung if (first > last)  daher abruch der while schleife
             }else{
                 last = mid - 1;
             }
