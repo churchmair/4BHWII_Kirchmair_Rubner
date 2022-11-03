@@ -14,7 +14,7 @@ public class sumFunction {
 
     public static int sumFunctionRecursive(int number){
 
-        if(number == 1){
+        if(number == 1 || number == 0){
             return number = 1;
         }
         else{
