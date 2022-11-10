@@ -12,10 +12,10 @@ public class faculty {
         System.out.println("Das Ergebnis ist: " + faculty(number));
     }
 
+
     private static int faculty(int zahl){
         return facultyEndRecursive(1, zahl);
     }
-
 
     public static int facultyEndRecursive(int sum, int fak){
         if (fak == 0){
@@ -24,9 +24,5 @@ public class faculty {
         else{
              return facultyEndRecursive(sum * fak,fak - 1);
         }
-
     }
-
-
-
 }
