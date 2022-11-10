@@ -3,7 +3,7 @@ public class faculty {
     public static void main(String[] args) {
 
         int number = 6;
-        System.out.println(facultyRecursive(6));
+        System.out.println("Das Ergebnis ist: " + facultyRecursive(6));
     }
 
     public static int facultyRecursive(int number){
