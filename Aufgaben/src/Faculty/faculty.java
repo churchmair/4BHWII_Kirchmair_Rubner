@@ -1,3 +1,5 @@
+package Faculty;
+
 import java.util.Scanner;
 
 public class faculty {

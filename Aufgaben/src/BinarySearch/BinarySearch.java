@@ -1,4 +1,16 @@
+package BinarySearch;
+
 public class BinarySearch {
+
+    public static void main(String args[]){
+        // array erstellen
+        char arr[] = {'a','b','c','d','e','f','g','h','i'};
+        // wert nachdem gesucht wird
+        char key = 'a';
+
+        binarySearch(arr,0,arr.length-1,key);
+    }
+
 
     public static void binarySearch(char arr[], int first, int last, char key){
 
@@ -18,7 +30,7 @@ public class BinarySearch {
                 System.out.println("Element is found at index: " + mid);
                 break;
 
-                // abbruchs bedingung if (first > last)  daher abruch der while schleife
+                // abbruchs bedingung if (first > last)  daher abbruch der while schleife
             }else{
                 last = mid - 1;
             }
@@ -27,13 +39,5 @@ public class BinarySearch {
         if ( first > last ){
             System.out.println("Element is not found!");
         }
-    }
-    public static void main(String args[]){
-        // array erstellen
-        char arr[] = {'a','b','c','d','e','f','g','h','i'};
-        // wert nachdem gesucht wird
-        char key = 'a';
-
-        binarySearch(arr,0,arr.length-1,key);
     }
 }

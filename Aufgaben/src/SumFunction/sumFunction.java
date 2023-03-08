@@ -1,3 +1,5 @@
+package SumFunction;
+
 public class sumFunction {
 
     public static void main(String[] args) {
@@ -14,7 +16,7 @@ public class sumFunction {
 
     public static int sumFunctionRecursive(int number){
 
-        if(number == 1 || number == 0){
+        if((number == 1) || (number == 0)){
             return number = 1;
         }
         else{
