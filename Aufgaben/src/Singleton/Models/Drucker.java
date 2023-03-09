@@ -11,7 +11,7 @@ public class Drucker {
     }
 
     public static String drucken(){
-        return "Ich drucke, bin die Instanz XYZ";
+        return "Ich drucke, bin die Instanz " + Drucker.getInstance().hashCode();
     }
 
 

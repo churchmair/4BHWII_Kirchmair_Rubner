@@ -9,14 +9,7 @@ public class DruckerMain {
         Drucker drucker2 = Drucker.getInstance();
 
 
-        if(drucker == drucker2){
-            System.out.println("Es seits der gleiche Drucker");
-        }
-        else{
-            System.out.println(drucker.drucken());
-            System.out.println(drucker2.drucken());
-        }
-
-
+        System.out.println(drucker.drucken());
+        System.out.println(drucker2.drucken());
     }
 }
