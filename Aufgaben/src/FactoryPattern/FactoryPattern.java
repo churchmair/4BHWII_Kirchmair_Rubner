@@ -11,6 +11,6 @@ public class FactoryPattern {
         System.out.println(env1);
         System.out.println(env2);
         System.out.println(env3);
-        
+
     }
 }
