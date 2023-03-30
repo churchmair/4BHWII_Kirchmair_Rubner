@@ -2,10 +2,10 @@ package FactoryPattern.Models;
 
 public abstract class Envelopes {
 
-    protected String _size;
-    protected String _weight;
+    protected Size _size;
+    protected Double _weight;
 
-    public Envelopes(String size, String weight){
+    public Envelopes(Size size, Double weight){
         this._size = size;
         this._weight = weight;
     }
