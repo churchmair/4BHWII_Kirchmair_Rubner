@@ -2,8 +2,8 @@ package FactoryPattern.Models;
 
 public abstract class Envelopes {
 
-    protected Size _size;
-    protected Double _weight;
+    private Size _size;
+    private Double _weight;
 
     public Size get_size() {
         return _size;
