@@ -2,35 +2,34 @@ package PizzeriaFactoryPattern;
 
 public class Factory {
     public static Pizzeria getInstance(PizzaTyp typ){
-        Pizzeria p = null;
-        switch(typ){
-            case BerlinSalami:
-                p = new BerlinPizzeria(new PizzaSalami("BerlinSalami"));
-                break;
-            case BerlinHawaii:
-                p = new BerlinPizzeria(new PizzaHawaii("BerlinHawaii"));
-                break;
-            case BerlinCalzone:
-                p = new BerlinPizzeria(new PizzaCalcone("BerlinCalcone"));
-                break;
-            case HamburgSalami:
-                p = new HamburgPizzeria(new PizzaSalami("HamburgSalami"));
-                break;
-            case HamburgHawaii:
-                p = new HamburgPizzeria(new PizzaHawaii("HamburgHawaii"));
-                break;
-            case HamburgCalzone:
-                p = new HamburgPizzeria(new PizzaCalcone("HamburgCalcone"));
-                break;
-            case RostockSalami:
-                p = new RostockPizzeria(new PizzaSalami("RostockSalami"));
-                break;
-            case RostockHawaii:
-                p = new RostockPizzeria(new PizzaHawaii("RostockHawaii"));
-                break;
-            case RostockCalzone:
-                p = new RostockPizzeria(new PizzaCalcone("RostockCalcone"));
+
+        if(typ == PizzaTyp.BerlinCalzone){
+            return new BerlinPizzeria(new PizzaCalcone("BerlinCalcone"));
         }
-        return p;
+        else if(typ == PizzaTyp.BerlinHawaii){
+            return new BerlinPizzeria(new PizzaHawaii("BerlinHawaii"));
+        }
+        else if(typ == PizzaTyp.BerlinSalami){
+            return new BerlinPizzeria(new PizzaSalami("BerlinSalami"));
+        }
+        else if(typ == PizzaTyp.HamburgCalzone){
+            return new HamburgPizzeria(new PizzaCalcone("HamburgCalcone"));
+        }
+        else if(typ == PizzaTyp.HamburgHawaii){
+            return new HamburgPizzeria(new PizzaHawaii("HamburgHawaii"));
+        }
+        else if(typ == PizzaTyp.HamburgSalami){
+            return new HamburgPizzeria(new PizzaSalami("HamburgSalami"));
+        }
+        else if(typ == PizzaTyp.RostockCalzone){
+            return new RostockPizzeria(new PizzaCalcone("RostockCalcone"));
+        }
+        else if(typ == PizzaTyp.RostockHawaii){
+            return new RostockPizzeria(new PizzaHawaii("RostockHawaii"));
+        }
+        else if(typ == PizzaTyp.RostockSalami){
+            return new RostockPizzeria(new PizzaSalami("RostockSalami"));
+        }
+        return null;
     }
 }
