@@ -1,6 +1,6 @@
 package PizzeriaFactoryPattern;
 
-public class Main {
+public class PizzeriaMain {
     public static void main(String[] args) {
         Pizzeria p1 = Factory.getInstance(PizzaTyp.BerlinCalzone);
         Pizzeria p2 = Factory.getInstance(PizzaTyp.HamburgHawaii);
