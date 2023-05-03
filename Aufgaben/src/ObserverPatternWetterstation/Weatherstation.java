@@ -2,7 +2,7 @@ package ObserverPatternWetterstation;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Wetterstation {
+public class Weatherstation {
     private List<PushClient> pushClients = new ArrayList<>();
 
     public void addClient(PushClient client){

@@ -1,6 +1,6 @@
 package ObserverPatternWetterstation;
 
-public class Wheater extends Wetterstation{
+public class Weather extends Weatherstation {
     private int temperature;
     private int humidity;
     private int windSpeed;
