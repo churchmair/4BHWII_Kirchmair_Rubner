@@ -1,4 +1,4 @@
-package PizzeriaFactoryPattern;
+package FactoryPatternPizzaria;
 
 public abstract class Pizza {
     private String name;

@@ -1,4 +1,4 @@
-package PizzeriaFactoryPattern;
+package FactoryPatternPizzaria;
 
 public abstract class Pizzeria {
     private Pizza pizza;

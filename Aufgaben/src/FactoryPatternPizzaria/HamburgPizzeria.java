@@ -1,4 +1,4 @@
-package PizzeriaFactoryPattern;
+package FactoryPatternPizzaria;
 
 public class HamburgPizzeria  extends Pizzeria{
     public HamburgPizzeria(Pizza pizza) {

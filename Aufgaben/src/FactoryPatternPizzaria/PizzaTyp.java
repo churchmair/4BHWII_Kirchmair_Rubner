@@ -1,4 +1,4 @@
-package PizzeriaFactoryPattern;
+package FactoryPatternPizzaria;
 
 public enum PizzaTyp {
     BerlinSalami, BerlinHawaii, BerlinCalzone,

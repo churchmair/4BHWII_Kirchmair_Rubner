@@ -1,4 +1,4 @@
-package PizzeriaFactoryPattern;
+package FactoryPatternPizzaria;
 
 public class Factory {
     public static Pizzeria getInstance(PizzaTyp typ){
