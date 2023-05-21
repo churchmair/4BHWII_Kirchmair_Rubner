@@ -1,14 +1,8 @@
 package ProxyDrucker;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class ProxyDrucker implements Drucker{
 
     private Drucker drucker = new RealDrucker();
-
-
-
 
     @Override
     public void print(int numberPages){
