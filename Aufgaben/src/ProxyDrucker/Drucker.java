@@ -2,5 +2,5 @@ package ProxyDrucker;
 
 public interface Drucker {
 
-    public void print(int numberPages);
+    void print(int numberPages);
 }
