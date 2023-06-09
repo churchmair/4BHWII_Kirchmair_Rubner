@@ -7,10 +7,12 @@ public class Main {
         TicketChild tc = new TicketChild();
         TicketAdult ta = new TicketAdult();
         TicketSenior ts = new TicketSenior();
+        TicketStudent tst = new TicketStudent();
 
         cart.addTicket(tc);
         cart.addTicket(ta);
         cart.addTicket(ts);
+
 
         System.out.printf("The total price is: %.2f", cart.calcTotal());
         System.out.println();
@@ -20,6 +22,7 @@ public class Main {
         System.out.println();
 
         cart.removeTicket(ts);
+        cart.addTicket(tst);
 
         System.out.printf("The total price is: %.2f", cart.calcTotal());
     }
