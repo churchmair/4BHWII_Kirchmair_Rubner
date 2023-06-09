@@ -12,6 +12,7 @@ public class TicketAdult implements Ticket {
 
     @Override
     public double calcPrice() {
-        return price = price * tax;
+        double sum = price * tax;
+        return sum;
     }
 }
